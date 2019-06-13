@@ -1,37 +1,31 @@
 body {
-    margin: 0;
+    background-color: whitesmoke;
 }
 
-.navbar {
-    height: 100px;
-    background-color: #333;
-    color: whitesmoke;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 30px;
+.todo-list {
+    background-color: grey;
+    margin: auto;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    border: 1px solid #efefef;
+    padding: 30px;
 }
 
-.mainsection {
-    height: 200px;
-    background-color: darkcyan;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-}
-
-.footer-container {
-    height: 100px;
-    background-color: #333;
-    color: whitesmoke;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 30px;
+.todo-item {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid #cecece;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
 }
