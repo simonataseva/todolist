@@ -1,20 +1,22 @@
 import React from 'react'
-import ContacCard from './ContactCard.js'
+import Joke from './Joke'
 
 function App() {
   return (
-    <div className="contacts">
-      <ContacCard 
-        contact={{name: "Max", imgUrl: "https://www.dogster.com/wp-content/uploads/2019/01/Yellow-Labrador-Retriever-happy-in-grass-.jpg", breed: "Labrador", age: "2 years"}}
-        />
+    <div>
+      <Joke punchLine="It's hard to explain puns to kleptomaniacs because they always take things literally."/>
+      
+      <Joke 
+        question="What's the best thing about Switzerland?" 
+        punchLine="I don't know, but the flag is a big plus."/>
 
-      <ContacCard
-        contact={{name: "Sara", imgUrl: "https://kucniljubimac.com/wp-content/uploads/2018/01/engleski-koker-spanijel-stenci-cena.jpg", breed: "Cocker Spaniel", age: "2 months"}}
-        /> 
+      <Joke 
+        question="Hear about new restaurant called Karma?" 
+        punchLine="There's no menu: You get what you deserve."/>
 
-      <ContacCard 
-        contact={{name: "Arthur", imgUrl: "https://i.pinimg.com/736x/21/63/16/216316f5ff080e85b8e6df496b266f7d.jpg", breed: "French Bulldog", age: "3 months"}}
-        /> 
+      <Joke 
+        question="Did you hear about the claustrophobic astronaut?" 
+        punchLine="He just needed a little space."/>    
     </div>
   )
 }
