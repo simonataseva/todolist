@@ -1,20 +1,14 @@
-import React from 'react'
-
-import Joke from './Joke'
-import jokesData from "./jokesData.js"
-
+import React from "react"
+import Equipment from "./Equipment.js"
+import equipmentData from "./footballEquipment.js"
 
 function App() {
-  const jokeComponents = jokesData.map(function(joke) {
-    return (
-      <Joke key={joke.id} question={joke.question} punchline={joke.punchLine} />
-    )
-  })
-  
+  const equipmentComponents = equipmentData.map(item => <Equipment key={item.id} equipment={item}/>)
+    
   return (
-    <div>
-      {jokeComponents}   
-    </div>
+      <div>
+        {equipmentComponents}  
+      </div>
   )
 }
 

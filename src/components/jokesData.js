@@ -5,8 +5,13 @@ const jokesData = [
     },
     {
         id: 2,
-        question: "What's the best thing about Switzerland?",
-        punchLine: "I don't know, but the flag is a big plus."
+        question: "What's the best thing about Switzerland?", 
+        punchLine: "I don't know, but the flag is a big plus.",
+        newline: {
+            id: 0,
+            name: "Simona",
+            age: "24"
+        }
     },
     {
         id: 3,
